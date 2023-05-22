@@ -1,0 +1,14 @@
+
+> javascript-lab@1.0.0 test
+> mocha --timeout 5000 -R mocha-multi --reporter-options spec=-,json=.results.json
+
+
+
+  submitData()
+    ✓ makes a POST request to /users with a name and email
+    ✓ handles the POST request response, retrieves the new id value and appends it to the DOM
+    ✓ handles a failed POST request using catch, appends the error message to the DOM
+
+
+  3 passing (299ms)
+

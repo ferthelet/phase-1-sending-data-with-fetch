@@ -2,9 +2,9 @@
 
 ## Learning Goals
 
-- Use `fetch()` to send data to a remote host
-- Handle the response from a successful request
-- Handle errors from an unsuccessful request
+- Use `fetch()` to send data to a remote host.
+- Handle the response from a successful request.
+- Handle errors from an unsuccessful request.
 
 ## Introduction
 

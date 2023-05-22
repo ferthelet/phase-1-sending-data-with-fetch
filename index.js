@@ -17,20 +17,22 @@ const configurationObject = {
     body: JSON.stringify(formData),
 };
 
-fetch("http://localhost:3000/dogs", configurationObject);
-
+fetch("http://localhost:3000/dogs", configurationObject)
+    .then(response => response.json())
+    .then(object => console.log(object));
+    
 // OR directly in the fetch() call:
-fetch("http://localhost:3000/dogs", {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-    },
-    body: JSON.stringify({
-        dogName: "Dora",
-        dogBreed: "Labrador"
-    })
-});
+// fetch("http://localhost:3000/dogs", {
+//     method: "POST",
+//     headers: {
+//         "Content-Type": "application/json",
+//         "Accept": "application/json"
+//     },
+//     body: JSON.stringify({
+//         dogName: "Dora",
+//         dogBreed: "Labrador"
+//     })
+// });
 
 
 

@@ -19,7 +19,11 @@ const configurationObject = {
 
 fetch("http://localhost:3000/dogs", configurationObject)
     .then(response => response.json())
-    .then(object => console.log(object));
+    .then(object => console.log(object))
+    .catch(error => {
+        alert("Bad things! Ragnarők!");
+        console.log(error.message);
+    });
     
 // OR directly in the fetch() call:
 // fetch("http://localhost:3000/dogs", {
